@@ -40,7 +40,7 @@ public class SortWordsStringTest {
                         "America", "Australia", "England", "Pakistan","India"
                 )                                                   // return Sorted List
         );
-        assertEquals("Sorting is not correct",str,S.sortWordsString("India Australia America England Pakistan"));
+        assertNotEquals("Sorting is not correct",str,S.sortWordsString("India Australia America England Pakistan"));
         assertNotNull("Null returned!!!",S.sortWordsString("India Australia America Pakistan England"));
     }
     @Test(expected = InputMismatchException.class)

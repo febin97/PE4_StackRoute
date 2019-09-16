@@ -29,7 +29,7 @@ public class CharInStringTest {
 
     @Test
     public void charFreqString_CorrectInput_CorrectOutputFailure() {
-        assertEquals("Check your function, not returning correct Count value",2,obj.charFreqString("Java is Simple, valare simple aanu",'z'));
+        assertNotEquals("Check your function, not returning correct Count value",2,obj.charFreqString("Java is Simple, valare simple aanu",'z'));
     }
 
     @Test(expected = InputMismatchException.class)
